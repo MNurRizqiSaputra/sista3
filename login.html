@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Form</title>
+		<link rel="stylesheet" type="text/css" href="CSS/style2.css">
+		<script type="text/javascript" src="JS/otentikasi.js"></script>
+		<link rel="shortcut icon" href="images/logosista2.ico">
+
+	</head>
+
+	<body>
+		<center><img src="images/sistalogo2.png" alt=""></center>
+		<center><h1 style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif;">LOGIN SEBAGAI ADMIN<b></b></h1></center>
+		<center><h1 style="color:  rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif;">UNTUK DAPAT MENGELOLA SISTEM SISTA</h1></center>
+		<div id="body">
+			<div id="judul">
+    				<h1>LOGIN</h1>
+    				<div class="underline-title"></div>
+  			</div>
+		
+			
+			<form method="request">	
+				<input type="text" id="username" name="username" class="form_login" placeholder=" Masukan Username Anda">
+				<input type="password" id="password" name="password" class="form_login" placeholder=" Masukan Password Anda ">
+				
+				<input type="submit" class="tombol_login" onClick="return validasi()" value="LOGIN">
+				<input type="submit" class="tombol_out" onClick="return logout()" value="CANCEL">
+
+			</form>	
+
+			<center><p style="color: rgb(0, 0, 0); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Username = admin, Password = admin </p></center> 
+			
+		</div>
+	</body>
+</html>

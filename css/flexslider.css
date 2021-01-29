@@ -312,7 +312,7 @@ html[xmlns] .slides {display: block;}
 /* Caption */
 .top_slider .slide1 {
 	height:100%;
-	background-image:url(../images/slider/gilabola.jpg);
+	background-image:url(../images/slider/cro1.jpg);
 	background-size:cover;
 	background-attachment:fixed !important;
 }
@@ -341,7 +341,7 @@ html[xmlns] .slides {display: block;}
 
 .top_slider .slide2 {
 	height:100%;
-	background-image:url(../images/slider/prsj.jpg);
+	background-image:url(../images/slider/cro2.jpg);
 	background-size:cover;
 	background-attachment:fixed !important;
 }
@@ -369,7 +369,7 @@ html[xmlns] .slides {display: block;}
 
 .top_slider .slide3 {
 	height:100%;
-	background-image:url(../images/slider/cro.jpg);
+	background-image:url(../images/slider/cro3.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 }

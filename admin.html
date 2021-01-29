@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>SISTA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/logosista2.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script src="js/otentikasi.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/sistanms.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+
+
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<img src="images/sistalogo2.PNG">
+						<a href="admin.html" ><span class="b1" >SISTA</span></a>
+					</div><!-- //LOGO -->
+					
+					
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home" ><i class="fas fa-home"></i> Home</a></li>
+								<li class="scroll_btn"><a href="kelola-daftar-seminar.html" ><i class="fas fa-newspaper"></i> DAFTAR SEMINAR</a></li>
+								<li class="scroll_btn"><a href="kelola-seminar.html" ><i class="fas fa-cog"></i> KELOLA SEMINAR</a></li>
+								<li class="scroll_btn"><a href="kelola-peserta.html" ><i class="fas fa-user-plus"></i> DAFTAR PESERTA</a></li>
+								<li class="scroll_btn"><a href="#news" ><i class="fas fa-newspaper"></i> BERITA</a></li>
+								<li class="scroll_btn"><a href="#team" ><i class="fas fa-users"></i> TIM</a></li>
+								<div class="btn-group" >
+                                    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                                        <i class="fas fa-user"></i> ADMIN
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <li><form method="request">
+                                            <input type="submit" class="tombol_login" value="LOGOUT" onclick="return logout()">
+                                        </form>
+                                        </li>
+                                    </div>
+                                </div>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop" style="color: #fffdfd;">SISTA</p>
+							<p class="title4 captionDelay7 FromBottom" style="color: #fdfbfb;">SISTEM INFORMASI SEMINAR TUGAS AKHIR - SISTA</p>
+						</div>
+						
+					<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft">SISTA</p>
+							<p class="title4 captionDelay7 FromLeft">SISTA merupakan Sistem informasi untuk para mahasiswa semester akhir yang akan melakukan tugas akhir.</p>
+						</div>
+						
+					</li>
+					<li class="slide3">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay1 FromBottom">SISTA</p>
+							<p class="title4 captionDelay5 FromBottom">Dibuat oleh KELOMPOK 1</p>
+						</div>
+						
+						
+					</li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/cro1.jpg" alt="" /></li>
+					<li><img src="images/slider/cro2.jpg" alt="" /></li>
+					<li><img src="images/slider/cro3.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			<!-- SERVICES -->
+			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+				
+					<!-- ROW -->
+					<div class="row">
+							<a class="services_item" href="javascript:void(0);" >
+								<h1><b><center>WELCOME TO PAGE ADMIN</center></b></h1>
+								
+							</a>
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVICES -->
+		</br>
+			
+			<p><center><font face="sans serif" size="100" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-weight: bold;">BERIKUT FITUR UNTUK ADMIN</center></font></p>
+            <hr width="50%" height:"10px" color="white" size="10">
+			</h>
+		<table  class="table-responsive" width="100%" cellpadding="10" cellspasing="30">
+		<br>
+		<br>
+			<tr>
+				<td><center><a href="kelola-daftar-seminar.html"><img src="images/df_seminar.jpg" width=auto height="100px" class="img-fluid"></a></center></td>
+				<td><center><a href="kelola-seminar.html"><img src="images/kelola_seminar.jpg" width=auto height="100px" class="img-fluid"></a></center></td>
+				<td><center><a href="kelola-peserta.html"><img src="images/df_peserta.jpg" width=auto height="100px" class="img-fluid"></a></center></td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+			<!-- OUR CLIENTS -->
+			<div class="sponsor">
+			
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					<center><h2><b>DIDUKUNG OLEH</h2></center>
+					<!-- ROW -->
+					<div class="row" style="margin-left: 18%;">
+						<div class="col-lg-3 col-md-5 col-sm-2  client_img">
+							<img src="images/clients/nflogo.png" class="img-fluid" alt="" />
+						</div>
+						<div class="col-lg-3 col-md-5 col-sm-2 client_img">
+							<img src="images/clients/logosista2.jpg" class="img-fluid" alt="" />
+						</div>
+						<div class="col-lg-3 col-md-5 col-sm-2 client_img">
+							<img src="images/clients/kelasan.png" class="img-fluid" alt="" />
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- CONTAINER -->
+			</div><!-- //OUR CLIENTS -->
+		</section><!-- //PROJECTS -->
+		
+		
+		
+		
+		
+		<!-- NEWS -->
+		<section id="news">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>BERITA</b> SEMINAR UMUM STT NF</h2>
+				
+				<!-- TESTIMONIALS -->
+				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+				
+				<!-- RECENT POSTS -->
+				<div class="row recent_posts" data-appear-top-offset="-200" data-animated="fadeInUp">
+					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+						<div class="post_item">
+							<div class="post_item_img">
+								<img src="images/blog/pakrojulsmnr.JPG" alt="" />
+								<a class="link" href="seminar-umum1admin.html" ></a>
+							</div>
+							<div class="post_item_content">
+								<a class="title" href="seminar-umum1admin.html" >TEKNOLOGI MICROSERVICE</a><br>
+								<span>Pembicara	:	Sirojul Munir, S.Si, M.Kom</span>
+								<ul class="post_item_inf">
+									<li><a href="javascript:void(0);" ><i class="fas fa-thumbs-up"></i>1K LIKE</a> |</li>
+									<li><a href="javascript:void(0);" ><i class="fas fa-comments"></i>500 Comments</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+						<div class="post_item">
+							<div class="post_item_img">
+								<img src="images/blog/pakfeizalsmnr.JPG" alt="" />
+								<a class="link" href="seminar-umum2admin.html"></a>
+							</div>
+							<div class="post_item_content">
+								<a class="title" href="seminar-umum2admin.html" >SERVICE PLANNING ANALYST</a><br>
+								<span>Pembicara	:	Muhammad Feizal, S.kom ., M.T</span>
+								<ul class="post_item_inf">
+									<li><a href="javascript:void(0);" ><i class="fas fa-thumbs-up"></i>5K LIKE</a> |</li>
+									<li><a href="javascript:void(0);" ><i class="fas fa-comments"></i>1000 Comments</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+						<div class="post_item">
+							<div class="post_item_img">
+								<img src="images/blog/paklukmansmnr.jpg" alt="" />
+								<a class="link" href="seminar-umum3admin.html"></a>
+							</div>
+							<div class="post_item_content">
+								<a class="title" href="seminar-umum3admin.html" >PERAN PEMUDA UNTUK NEGARA</a><br>
+								<span>Pembicara	:	Dr. Lukman Rosyidi, S.T., M.M., M.T</span>
+								<ul class="post_item_inf">
+									<li><a href="javascript:void(0);" ><i class="fas fa-thumbs-up"></i>10K LIKE</a> |</li>
+									<li><a href="javascript:void(0);" ><i class="fas fa-comments"></i>5000 Comments</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!-- RECENT POSTS -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //NEWS -->
+	</div><!-- //PAGE -->
+
+	<!-- TEAM -->
+	<section id="team">
+		
+		<!-- CONTAINER -->
+		<div class="container">
+			<h2><b>TIM</b> SISTA</h2>
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+				<!-- TEAM SLIDER -->
+				<div class="owl-demo owl-carousel team_slider">
+			
+					<!-- crewman1 -->
+					
+					<!-- crewman2 -->
+					<div class="item">
+						<div class="crewman_item">
+							<div class="crewman">
+								<img src="images/team/azzam 2.jpg" alt="" />
+							</div>
+							<div class="crewman_descr center">
+								<div class="crewman_descr_cont">
+									<p>MUHAMMAD ADLI AZZAM</p>
+									<span>KETUA, DIRECTOR</span>
+								</div>
+							</div>
+							<div class="crewman_social">
+								<a href="https://www.instagram.com/adliazzam_19/" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://github.com/Muhammad-Adli-Azzam"  target="_blank"><i class="fa fa-github"></i></a>
+								<a href="https://wa.me/6287796958612" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+							</div>
+						</div>
+					</div><!-- crewman1 -->
+
+					<div class="item">
+						<div class="crewman_item">
+							<div class="crewman">
+								<img src="images/team/putra 2.JPG" alt="" />
+							</div>
+							<div class="crewman_descr center">
+								<div class="crewman_descr_cont">
+									<p>M NUR RIZQI SAPUTRA</p>
+									<span>FRONT-END</span>
+								</div>
+							</div>
+							<div class="crewman_social">
+								<a href="https://www.instagram.com/mnrs_putra/" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://github.com/MNurRizqiSaputra" target="_blank"><i class="fa fa-github"></i></a>
+								<a href="https://wa.me/6282114016528" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+							</div>
+						</div>
+					</div><!-- crewman1 -->
+
+					<div class="item">
+						<div class="crewman_item">
+							<div class="crewman">
+								<img src="images/team/arif 2.jpg" alt="" />
+							</div>
+							<div class="crewman_descr center">
+								<div class="crewman_descr_cont">
+									<p>ARIF SATRIYO NUR ALVIAN</p>
+									<span>UI/UX</span>
+								</div>
+							</div>
+							<div class="crewman_social">
+								<a href="https://www.instagram.com/dihkepo_ya/" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://github.com/arifsatriyo" target="_blank"><i class="fa fa-github"></i></a>
+								<a href="https://wa.me/62895383152983" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+							</div>
+						</div>
+					</div><!-- crewman1 -->
+
+					<div class="item">
+						<div class="crewman_item">
+							<div class="crewman">
+								<img src="images/team/reyhansyah 2.jpg" alt="" />
+							</div>
+							<div class="crewman_descr center">
+								<div class="crewman_descr_cont">
+									<p>REYHANSYAH</p>
+									<span>BACK-END</span>
+								</div>
+							</div>
+							<div class="crewman_social">
+								<a href="https://www.instagram.com/rsyah_213/" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://github.com/reyhansyah213" target="_blank" ><i class="fa fa-github"></i></a>
+								<a href="https://wa.me/628871619177" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+							</div>
+						</div>
+					</div><!-- crewman1 -->
+					
+					
+						</div>
+					</div><!-- crewman8 -->
+				</div><!-- TEAM SLIDER -->
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</section><!-- //TEAM -->
+	
+	<!-- CONTACTS -->
+<section id="contacts">
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			
+			<div class="row copyright">
+				<div class="col-lg-12 text-center">
+				
+				 <p><i class="far fa-copyright"></i>  DIBUAT OLEH  KELOMPOK 1</p>
+				 <marquee>(1) Muhammad Adli Azzam, (2) M Nur Rizqi Saputra, (3) Arif Satriyo Nur Alvian Purnama, (4) Reyhansyah </marquee>
+				</div>
+			
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+</section><!-- //CONTACTS -->	
+	
+
+</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>SISTA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/logosista2.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script src="js/otentikasi.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/sistanms.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<img src="images/sistalogo2.PNG" class="img-fluid">
+						<a href="admin.html" ><span class="b1" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >SISTA</span></a>
+					</div><!-- //LOGO -->
+					
+					
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="admin.html" ><i class="fas fa-home"></i> Home</a></li>
+								<li class="scroll_btn"><a href="kelola-daftar-seminar.html" ><i class="fas fa-newspaper"></i> DAFTAR SEMINAR</a></li>
+								<li class="scroll_btn"><a href="kelola-seminar.html" ><i class="fas fa-cog"></i> KELOLA SEMINAR</a></li>
+								<li class="scroll_btn"><a href="kelola-peserta.html" ><i class="fas fa-user-plus"></i> DAFTAR PESERTA</a></li>
+								<li class="scroll_btn"><a href="berita-admin.html" ><i class="fas fa-newspaper"></i> BERITA</a></li>
+								<li class="scroll_btn"><a href="tim-sista-admin.html" ><i class="fas fa-users"></i> TIM</a></li>
+								<div class="btn-group" >
+                                    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                                        <i class="fas fa-user"></i> ADMIN
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <li><form method="request">
+                                            <input type="submit" class="tombol_login" value="LOGOUT" onclick="return logout()">
+                                        </form>
+                                        </li>
+                                    </div>
+                                </div>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs_block clearfix parallax">
+			<div class="container center">
+				<center><img src="images/sistalogo2.PNG" class="img-fluid" ></center><br>
+				<h3 style="color: #ffffff;"><b>SISTEM INFORMASI SEMINAR TUGAS AKHIR</b></h3>
+				<h2><b>SISTA</b></h2>	
+			</div>
+		</section><!-- //BREADCRUMBS -->
+
+		<br>
+		<!-- PORTFOLIO -->
+		<section id="portfolio">
+			
+			<!-- CONTAINER -->
+			<div class="container">
+				
+				<!-- ROW -->
+				<div class="row">
+					
+					<!-- SIDEBAR -->
+					<div class="sidebar col-lg-4 col-md-4 pull-right padbot50">
+						<!-- TEXT WIDGET -->
+						<div class="sidepanel widget_text">
+							<div class="single_portfolio_post_title"></div>
+							<h3><b>SEMINAR UMUM TATA KELOLA TEKNOLOGI INFORMASI</b></h3><br>
+							<h3>SERVICE PLANNING ANALYST</h3>
+							<center><a href="update.html" style="font-size: x-large;"><i class="fas fa-pencil-alt"></i>edit</a> | <a href="hapus.html" style="font-size: x-large;"><i class="fas fa-trash-alt"></i>Delete</a></td></center>
+						</div><!-- //TEXT WIDGET -->
+						
+						<hr>
+						
+						<!-- INFO WIDGET -->
+						<div class="sidepanel widget_info">
+							<ul class="work_info">
+								<li>Location: <a href="https://g.page/sttterpadunf?share" target="blank" >Kampus B STT NF, Lenteng Agung, JakSel</a></li>
+								<li>Pembicara: <a href="javascript:void(0);" >Muhammad Feizal, S.kom ., M.T</a></li>
+							</ul>
+							
+							<ul class="shared">
+								<p style="font-size: medium;">Info Lebih Lanjut, ada di Sosial Media Kami:</p>
+								<li><a href="https://www.facebook.com/sttterpadunurulfikri" target="blank" ><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/sttterpadunf/" target="blank"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://nurulfikri.ac.id/" target="blank" ><i class="fa fa-globe"></i></a></li>
+							</ul>
+						</div><!-- //INFO WIDGET -->
+					</div><!-- //SIDEBAR -->
+					
+					
+					<!-- PORTFOLIO BLOCK -->
+					<div class="portfolio_block col-lg-8 col-md-8 pull-left padbot50">
+						
+						<!-- SINGLE PORTFOLIO POST -->
+						<div class="single_portfolio_post clearfix" data-animated="fadeInUp">
+							
+							<!-- PORTFOLIO SLIDER -->
+							<div class="flexslider portfolio_single_slider">
+								<img src="images/portfolio/pakfeizalsmnr.jpg " alt="" />
+								
+									
+							
+							</div><!-- //PORTFOLIO SLIDER -->
+						</div><!-- //SINGLE PORTFOLIO POST -->
+					</div><!-- //PORTFOLIO BLOCK -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+
+			<br>
+			<br>
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>CEK SEMINAR UMUM LAINNYA</b></h2>
+			</div><!-- //CONTAINER -->
+				<div class="container-fluid">
+					<div class="row" style="background-image: linear-gradient(to top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);">
+						<div class="col-md-6">
+							<center><a href="seminar-umum3admin.html"><img src="images/portfolio/peranpemuda.JPG" class="img-fluid" /></a></center>
+						</div>
+						<div class="col-md-6">
+							<center><a href="seminar-umum1admin.html"><img src="images/portfolio/microservice.jpg" class="img-fluid"/></a></center>
+						</div>
+					</div>
+				</div>
+			
+<!-- CONTACTS -->
+<section id="contacts">
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			
+			<div class="row copyright">
+				<div class="col-lg-12 text-center">
+				
+				 <p><i class="far fa-copyright"></i>  DIBUAT OLEH  KELOMPOK 1</p>
+				 <marquee>(1) Muhammad Adli Azzam, (2) M Nur Rizqi Saputra, (3) Arif Satriyo Nur Alvian Purnama, (4) Reyhansyah </marquee>
+				</div>
+			
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+</section><!-- //CONTACTS -->	
+</body>
+</html>

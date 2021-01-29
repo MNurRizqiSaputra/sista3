@@ -25,7 +25,7 @@ body {
 	font-size: 13px;
 	line-height: 20px;
 	color: #666;
-	background-color:#fff;
+	background-color:rgb(252, 252, 252);
 }
 #page {overflow-x:hidden; position:relative; z-index:5;}
 
@@ -208,14 +208,14 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 /* __________ breadcrumb __________ */
 .breadcrumbs_block {
 	padding:81px 0;
-	background-image:url(../images/clean_code_bg.jpg);
+	background-image:url(../images/clean_code_bg\ 2.JPG);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 .breadcrumbs_block h2 {
 	margin-bottom:15px;
-	line-height:80px;
-	font-size:80px;
+	line-height:50px;
+	font-size:60px;
 	color:#fff;
 }
 .breadcrumbs_block p {
@@ -250,7 +250,7 @@ header {
 	text-transform:uppercase;
 	line-height:80px;
 	font-size:26px;
-	color:#333;
+	color:rgb(243, 241, 241);
 }
 .logo a span {
 	display:inline-block;
@@ -274,8 +274,8 @@ header {
 	right:0;
 	height:80px;
 	width:100%;
-	background-color:#fff;
-	box-shadow:0 2px 3px rgba(0,0,0,0.1);
+	background-color: #000000;
+	box-shadow:0 2px 3px rgba(199, 196, 17, 0.1);
 }
 
 .navmenu ul li {
@@ -290,13 +290,14 @@ header {
 	font-weight:900;
 	line-height:20px;
 	font-size:13px;
-	color:#666;
+	color:rgb(255, 255, 255);
+	-webkit-text-stroke: 0.5px black;
 	transition: all 0.3s ease-in-out; 
 	-webkit-transition: all 0.3s ease-in-out;
 }
 .navmenu li:hover a,
 .navmenu li.active a {
-	color:#333;
+	color:rgb(243, 243, 236);
 }
 
 /* Sub menu */
@@ -538,7 +539,7 @@ header {
 	transition: transform 0.2s ease-in-out; 
 	-webkit-transition: -webkit-transform 0.2s ease-in-out;
 }
-.cleancode_block .nav-tabs li a.aboutus i {background-image:url(../images/aboutus.png);}
+.cleancode_block .nav-tabs li a.aboutus i {background-image:url(../images/lognf.png);}
 .cleancode_block .nav-tabs li a.kualitas i {background-image:url(../images/kualitas.png);}
 .cleancode_block .nav-tabs li a.price i {background-image:url(../images/price.png);}
 .cleancode_block .nav-tabs li a.size i {background-image:url(../images/size.png);}
@@ -1082,9 +1083,9 @@ footer {
 	left:50%;
 	opacity:0;
 	width:100%;
-	padding:60px 0 10px;
-	color:#999;
-	background-color:#1c1c1c;
+	padding:30px 0 10px;
+	color:rgb(243, 243, 243);
+	background-color:#000000;
 	transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -1097,7 +1098,7 @@ footer h4 {color:#fff;}
 .foot_about_block p {
 	margin-bottom:24px;
 	padding-right:71px;
-	line-height:24px;
+	line-height:10px;
 	font-size:12px;
 }
 
@@ -1195,15 +1196,34 @@ input[type="text"] {
 	font-weight:400;
 	line-height:20px;
 	font-size: 12px;
-	color: #333;
+	color: rgb(0, 0, 0);
 	font-style:normal;
 	border-radius: 0;	
-	background: none;
-	border: 2px solid #242424;
+	background: white;
+	border: 2px solid #ffffff;
+	box-shadow: transparent;
+	transition: border-color 0.3s ease-in-out; 
+	-webkit-transition: border-color 0.3s ease-in-out;
+}
+
+input[type="radio"] {
+	margin:0 0 10px;
+	padding: 10px 8px;
+	text-transform:none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	line-height:20px;
+	font-size: 12px;
+	border-radius: 25px;	
+	background: rgb(255, 255, 255);
+	border: 5px solid #002fff;
 	box-shadow: none;
 	transition: border-color 0.3s ease-in-out; 
 	-webkit-transition: border-color 0.3s ease-in-out;
 }
+
+
+
 textarea {
 	overflow:hidden;
 	min-height:95px;
@@ -1213,6 +1233,15 @@ textarea,
 input[type="text"].last {margin-right:0;
 }
 
+select {
+	margin:0 0 10px;
+	padding: 10px 8px;
+	text-transform:none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	line-height:20px;
+	font-size: 12px;
+}
 
 textarea:focus,
 input[type="text"]:focus,
@@ -1228,6 +1257,8 @@ input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
+input[type="radio"]:focus,
+input[type="select"]:focus,
 input[type="color"]:focus {
 	outline: 0;
 	box-shadow: none;
